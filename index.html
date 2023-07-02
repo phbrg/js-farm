@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>Farm</title>
+        <link rel="shortcut icon" href="./img/" type="image/x-icon">
+    </head>
+    <body>
+
+        <div class="alerts">
+            <p id="saidaAlert"></p>
+            <button onclick="fecharAlerta()">Fechar</button>
+        </div>
+
+        <header>
+
+            <ion-icon id="walletOpen" onclick="openWallet()" name="wallet"></ion-icon>
+
+            <div id="wallet">
+                <p>Sementes: <span id="sementes">0</span></p>
+                <p>Plantas: <span id="plantas">0</span></p>
+                <p>Frutos a colher: <span id="frutosC">0</span></p>
+                <p>Frutos: <span id="frutos">0</span></p>
+
+                <ion-icon onclick="closeWallet()" name="close"></ion-icon>
+            </div>
+
+        </header>
+
+        <main>
+            
+            <button class="communMain" onclick="prod1()">Colher sementes</button>
+
+            <button class="communMain" onclick="prod2()">Plantar sementes</button>
+
+            <button class="communMain" onclick="prod3()">Regar sementes</button>
+
+            <button class="communMain" onclick="colher()">Colher frutos</button>
+
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
